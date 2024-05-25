@@ -1,5 +1,8 @@
 'use client'
 import React, { useState } from 'react'
+import { CiMenuKebab } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
+
 import Link from 'next/link'
 import headerData from '@/data/header.json'
 
@@ -25,7 +28,10 @@ function Header() {
         </ul>
         <div>
             <button className='text-white sm:hidden z-20 relative' onClick={toggleMenu}>
-                {showMenu ? "Close" : "Menu"}
+                {showMenu ? <IoMdClose size={30}/> : <CiMenuKebab size={30} />}
+            </button>
+            <button className='sm:block hidden text-white pt-1 border-2 border-white rounded-full px-3 py-1 hover:bg-white hover:text-black duration-300'>
+                Contact Us
             </button>
         </div>
     </div>
