@@ -1,0 +1,20 @@
+{
+    "header":[
+        {
+            "label":"Home",
+            "href":"/"
+        },
+        {
+            "label":"Blog",
+            "href":"/blog"
+        },
+        {
+            "label":"Work",
+            "href":"/work"
+        },
+        {
+            "label":"Services",
+            "href":"/services"
+        }
+    ]
+}
